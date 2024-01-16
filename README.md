@@ -9,7 +9,9 @@ You need npm.
 ### For Chrome: <a name="chrome"></a>
 
 1. Edit the src/config.js file with your instance and username
-2. Run:
+2. Edit the manifest to include your jira instance in host permissions
+   ```host_permissions: ['*://*.jira.yourcompany.org/*']```
+3. Run:
     - Dev: `pnpm dev` or `npm run dev`
     - Prod: `pnpm build` or `npm run build`
 2. Open in browser - `chrome://extensions`
@@ -20,11 +22,13 @@ You need npm.
 ### For Firefox: <a name="firefox"></a>
 
 1. Edit the src/config.js file with your instance and username
-2. Run:
+2. Edit the manifest to include your jira instance in host permissions
+   ```host_permissions: ['*://*.jira.yourcompany.org/*']```
+3. Run:
     - Dev: `pnpm dev:firefox` or `npm run dev:firefox`
     - Prod: `pnpm build:firefox` or `npm run build:firefox`
-2. Open in browser - `about:debugging#/runtime/this-firefox`
-3. Find and Click - `Load Temporary Add-on...`
-4. Select - `manifest.json` from `dist` folder
+4. Open in browser - `about:debugging#/runtime/this-firefox`
+5. Find and Click - `Load Temporary Add-on...`
+6. Select - `manifest.json` from `dist` folder
 
 ## This is a janky solution that may not work perfectly 

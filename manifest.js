@@ -28,7 +28,7 @@ const manifest = {
   icons: {
     128: 'icon-128.png',
   },
-  host_permissions: ['*://*.fhjira.churchofjesuschrist.org/*'],
+  host_permissions: ['*://*.jira.yourcompany.org/*'],
   content_scripts: [
     {
       matches: ['http://*/*', 'https://*/*', '<all_urls>'],
