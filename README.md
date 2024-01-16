@@ -1,5 +1,6 @@
 <div align="center">
 <h1>Jira - time worked</h1>
+<img width="870" alt="Screenshot 2024-01-16 at 11 17 44 AM" src="https://github.com/birch-jayton/jira-worktime/assets/22551809/baa4b926-9a20-44c5-ad8b-429e3b3f7091">
 </div>
 
 ## Installation <a name="installation"></a>
