@@ -4,9 +4,9 @@
 </div>
 
 ## Installation <a name="installation"></a>
-### For Chrome: <a name="chrome"></a>
-
 You need npm.
+
+### For Chrome: <a name="chrome"></a>
 
 1. Edit the src/config.js file with your instance and username
 2. Run:
