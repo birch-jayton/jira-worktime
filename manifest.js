@@ -15,25 +15,20 @@ const manifest = {
   name: '__MSG_extensionName__',
   version: packageJson.version,
   description: '__MSG_extensionDescription__',
-  permissions: ['storage', 'sidePanel'],
-  side_panel: {
-    default_path: 'src/pages/sidepanel/index.html',
-  },
+  permissions: ['storage', 'sidePanel', 'webRequest', 'cookies'],
   options_page: 'src/pages/options/index.html',
   background: {
     service_worker: 'src/pages/background/index.js',
     type: 'module',
   },
   action: {
-    default_popup: 'src/pages/popup/index.html',
+    // default_popup: 'src/pages/popup/index.html',
     default_icon: 'icon-34.png',
-  },
-  chrome_url_overrides: {
-    newtab: 'src/pages/newtab/index.html',
   },
   icons: {
     128: 'icon-128.png',
   },
+  host_permissions: ['*://*.fhjira.churchofjesuschrist.org/*'],
   content_scripts: [
     {
       matches: ['http://*/*', 'https://*/*', '<all_urls>'],
