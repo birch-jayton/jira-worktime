@@ -5,6 +5,8 @@
 ## Installation <a name="installation"></a>
 ### For Chrome: <a name="chrome"></a>
 
+You need npm.
+
 1. Edit the src/config.js file with your instance and username
 2. Run:
     - Dev: `pnpm dev` or `npm run dev`
